@@ -1,5 +1,16 @@
-fastapi
-uvicorn
-realesrgan
-Pillow
-numpy
+# Core dependencies (required)
+fastapi>=0.110,<0.120
+uvicorn[standard]>=0.27,<0.35
+Pillow>=10.0,<12
+numpy>=1.24,<2.0
+requests>=2.31,<3
+python-multipart>=0.0.9
+httpx>=0.27,<1
+
+# Real-ESRGAN dependencies (optional, heavy)
+# If these fail to install on your platform, comment them out — the API
+# falls back to Pillow-only mode automatically.
+realesrgan==0.3.0
+torch>=2.0,<2.3
+torchvision>=0.15,<0.18
+opencv-python>=4.8,<5

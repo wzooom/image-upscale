@@ -1,6 +1,15 @@
 venv/
+new_venv/
 .venv/
 __pycache__/
 *.pyc
 .env
+.DS_Store
 
+# Real-ESRGAN downloaded model weights
+*.pth
+
+# Generated test outputs
+images/output/
+images/tmp/
+images/temp/
